@@ -4,7 +4,7 @@
 
 **Click once, track the object through video: EdgeTAM and SAM 2.1 tiny in Rust on ONNX Runtime's CUDA provider.**
 
-~42 ms a frame on an RTX 3070, masks within 0.95 IoU of PyTorch, no Python and no CUDA toolkit at run time.
+~42 ms a frame on an RTX 3070, mean mask IoU 0.97–0.998 vs PyTorch, no Python and no CUDA toolkit at run time.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-F2FF59.svg?labelColor=211927)](LICENSE)
 [![Rust](https://img.shields.io/badge/Rust-2024-000000?logo=rust&logoColor=white)](https://www.rust-lang.org)
