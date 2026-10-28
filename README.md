@@ -13,8 +13,8 @@
 
 </div>
 
-The Windows and Linux sibling of [edgetam-coreml](https://github.com/jutsuhq/edgetam-coreml), and the tracker inside
-[Kawarimi](https://github.com/jutsuhq/kawarimi-local-character-swap).
+The Windows and Linux sibling of [edgetam-coreml](https://github.com/jutsuhq/edgetam-coreml), which runs the same tracker
+on the Apple Neural Engine.
 
 - **EdgeTAM** ([`jax-image-tools/edgetam-video-onnx`](https://huggingface.co/jax-image-tools/edgetam-video-onnx)):
   every per-frame tensor stays on the GPU. The model's four graphs are chained through IoBinding, small glue graphs
@@ -99,6 +99,14 @@ cargo run --release --bin track-parity -- .cache/reference/edgetam --models .mod
 | `scripts/glue/make_glue.py` | Rebuilds `data/glue/*.onnx` |
 | `scripts/parity/edgetam_constants.py` | Rebuilds `data/edgetam_constants.json` from the reference model |
 | `scripts/parity/reference.py` | PyTorch reference masks for the parity check |
+
+## Related
+
+- [edgetam-coreml](https://github.com/jutsuhq/edgetam-coreml): EdgeTAM in Core ML on the Apple Neural Engine, about 49 ms a frame on an M4
+- [Swapjutsu](https://github.com/jutsuhq/swapjutsu-seedance-character-swap): free character swap for Mac that tracks people with EdgeTAM
+- [Jutsu Studio](https://github.com/jutsuhq/jutsu-studio): the open-source Higgsfield desktop app for Mac
+- [Content Factory](https://github.com/jutsuhq/content-factory): open-source faceless video generator for Shorts, TikTok and Reels
+- [AI video API prices](https://github.com/jutsuhq/video-api-prices): what one second of AI video costs at 30+ providers, updated daily
 
 ## License
 
