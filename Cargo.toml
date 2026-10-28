@@ -1,0 +1,21 @@
+[package]
+name = "edgetam-onnx"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Promptable video object tracking with ONNX Runtime on CUDA: EdgeTAM and SAM 2.1 tiny"
+repository = "https://github.com/jutsuhq/edgetam-onnx"
+keywords = ["edgetam", "sam2", "onnx", "tracking", "segmentation"]
+categories = ["computer-vision"]
+
+[dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+ort = { version = "=2.0.0-rc.14", features = ["cuda"] }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+libloading = "0.8"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[profile.dev.package."*"]
+opt-level = 2
