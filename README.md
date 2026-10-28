@@ -104,6 +104,7 @@ cargo run --release --bin track-parity -- .cache/reference/edgetam --models .mod
 
 - [edgetam-coreml](https://github.com/jutsuhq/edgetam-coreml): EdgeTAM in Core ML on the Apple Neural Engine, about 49 ms a frame on an M4
 - [Swapjutsu](https://github.com/jutsuhq/swapjutsu-seedance-character-swap): free character swap for Mac that tracks people with EdgeTAM
+- [Kawarimi](https://github.com/jutsuhq/kawarimi-local-character-swap): local AI character swap for Windows and Linux that tracks people with this crate
 - [Jutsu Studio](https://github.com/jutsuhq/jutsu-studio): the open-source Higgsfield desktop app for Mac
 - [Content Factory](https://github.com/jutsuhq/content-factory): open-source faceless video generator for Shorts, TikTok and Reels
 - [AI video API prices](https://github.com/jutsuhq/video-api-prices): what one second of AI video costs at 30+ providers, updated daily
